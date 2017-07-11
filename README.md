@@ -1,1 +1,1 @@
-Exercises
+Java Exercises
