@@ -9,27 +9,27 @@ public class TaskTwo {
         taskTwo.method("My dog saw another dog playing in the garden. Second dog is not my dog. Either this is not my garden.");
     }
 
-    void method(String input){
+    private void method(String input){
         Map<String, Integer> map = new LinkedHashMap<>();
         int a = 0;
 
         String[] array = input.split(" ");
-        for(String s : array){
-         if(s.charAt(s.length()-1) == '.'){
-            s = s.substring(0, s.length()-1);
+        for(String word : array){
+         if(word.charAt(word.length()-1) == '.'){
+            word = word.substring(0, word.length()-1);
         }
-               if(!map.containsKey(s)){
-                   map.put(s, ++a);
+               if(!map.containsKey(word)){
+                   map.put(word, ++a);
                }
         }
 
-        for(String s : array){
-            if(s.charAt(s.length()-1) == '.'){
-                s = s.substring(0, s.length()-1);
-                System.out.printf("%d. ", map.get(s));
+        for(String word : array){
+            if(word.charAt(word.length()-1) == '.'){
+                word = word.substring(0, word.length()-1);
+                System.out.printf("%d. ", map.get(word));
             }
             else{
-                System.out.printf("%d ", map.get(s));
+                System.out.printf("%d ", map.get(word));
             }
         }
     }

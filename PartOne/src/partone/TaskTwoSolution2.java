@@ -16,19 +16,19 @@ public class TaskTwoSolution2 {
         String[] array = input.split(" ");
         boolean dot = false;
         StringBuilder sb = new StringBuilder();
-        for(String s : array){
-            if(s.charAt(s.length()-1) == '.'){
-                s = s.substring(0, s.length()-1);
+        for(String word : array){
+            if(word.charAt(word.length()-1) == '.'){
+                word = word.substring(0, word.length()-1);
                 dot = true;
             }
-            if(!map.containsKey(s)){
-                map.put(s, ++a);
+            if(!map.containsKey(word)){
+                map.put(word, ++a);
                 if(dot){ sb.append(" " + a + ".");}
                 else{sb.append(" " + a);}
             }
             else{
-                if(dot){ sb.append(" " + map.get(s) + ".");}
-                else{sb.append(" " + map.get(s));}
+                if(dot){ sb.append(" " + map.get(word) + ".");}
+                else{sb.append(" " + map.get(word));}
             }
             dot = false;
         }

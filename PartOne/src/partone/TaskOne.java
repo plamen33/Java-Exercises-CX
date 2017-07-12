@@ -11,7 +11,7 @@ public class TaskOne {
         one.method("I love to play soccer.");
     }
 
-    void method(String input){
+    private void method(String input){
         input = input.replace(" ", "");
         char[] array = input.toCharArray();
         Map<Character, Integer> map = new LinkedHashMap<>();
@@ -24,9 +24,9 @@ public class TaskOne {
             }
         }
         StringBuilder sb = new StringBuilder();
-        for(Map.Entry e: map.entrySet()){
-            //System.out.printf("%s->%d, ", e.getKey(), e.getValue());
-            sb.append(e.getKey()+"->"+e.getValue()+", ");
+        for(Map.Entry mapEntry: map.entrySet()){
+            //System.out.printf("%s->%d, ", mapEntry.getKey(), mapEntry.getValue());
+            sb.append(mapEntry.getKey()+"->"+mapEntry.getValue()+", ");
         }
         String result = sb.toString();
         result = result.substring(0, result.length()-2);
