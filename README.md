@@ -1,2 +1,1 @@
-# Java-Exercises-CX
-CX exercises
+Java Exercises
