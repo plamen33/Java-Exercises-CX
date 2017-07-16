@@ -1,0 +1,6 @@
+
+build-jar:
+      [jar] Building jar: D:\Documents\1 Programming\Codix\ANT\JavaTest\out\artifacts\JavaTest_jar\result.jar
+
+BUILD SUCCESSFUL
+Total time: 0 seconds

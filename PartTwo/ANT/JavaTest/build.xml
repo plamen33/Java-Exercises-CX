@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<project name="test" basedir="." default="all">
+   <property name="src.dir" value="D:\Documents\1 Programming\Codix\ANT\JavaTest\src"/>
+   <property name="jar.dir" value="D:\Documents\1 Programming\Codix\ANT\JavaTest\out\artifacts\JavaTest_jar"/>
+   <property name="class.dir" value="D:\Documents\1 Programming\Codix\ANT\JavaTest\out\production\JavaTest"/>
+   <property name="name" value="test"/>
+   
+   <path id="master-classpath">
+      <fileset dir="D:\Documents\1 Programming\Codix\ANT\JavaTest\src">
+         <include name="*.png"/>
+      </fileset> 
+   </path>
+   
+   <target name="all" depends="clean, build, copy, build-jar ">
+   
+   </target>
+   
+   <target name="clean" description="Clean output directories">
+      <delete>
+         <fileset dir="${class.dir}/custom">
+			<include name="**/*.*"/>
+         </fileset>
+      </delete>
+   </target>
+ 
+   <target name="build" depends="clean" description="Compile main source tree java files">
+     <javac includeantruntime="false" srcdir="${src.dir}" destdir="${class.dir}" source="1.8" target="1.8" debug="false"
+        deprecation="false" optimize="false" failonerror="true">
+	  <classpath refid="master-classpath"/>
+     </javac>
+   </target>
+
+   <target name="copy" description="Copy files">
+     <copy todir="${class.dir}/custom" overwrite="yes">
+	   <fileset dir="${class.dir}">
+          <include name="**/*.png"/>
+		  <include name="**/*.class"/>
+       </fileset>
+     </copy>
+   </target>
+    
+   <target name="build-jar">
+       <jar destfile="${jar.dir}/JavaOOPTest.jar"
+          basedir="${class.dir}/custom">
+		  <manifest>
+           <attribute name="Main-Class"
+           value="Main"/>
+         </manifest>
+      </jar>
+   </target>
+   
+</project>

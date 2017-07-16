@@ -1,0 +1,6 @@
+
+build:
+    [javac] Compiling 3 source files to D:\Documents\1 Programming\Codix\ANT\JavaTest\out\production\JavaTest
+
+BUILD SUCCESSFUL
+Total time: 0 seconds

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<project name="test" basedir="." default="build-jar">
+   <property name="src.dir" value="D:\Documents\1 Programming\Codix\ANT\servlet-jsp\src\main\java\servlets"/>
+   <property name="custom.dir" value="D:\Documents\1 Programming\Codix\ANT\JavaTest\out\production\JavaTest\custom"/>
+   <property name="name" value="test"/>
+   
+   <target name="build-jar">
+      <jar destfile="D:\Documents\1 Programming\Codix\ANT\JavaTest\out\artifacts\JavaTest_jar\result.jar"
+         basedir="${custom.dir}">
+		 <manifest>
+           <attribute name="Main-Class"
+           value="Main"/>
+         </manifest>
+      </jar>
+   </target>
+   
+</project>

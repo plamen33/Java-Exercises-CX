@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<project name="test" basedir="." default="clean">
+   <property name="src.dir" value="D:\Documents\1 Programming\Codix\ANT\JavaTest\src"/>
+   <property name="clear.dir" value="D:\Documents\1 Programming\Codix\ANT\JavaTest\out\production\JavaTest\custom"/>
+   <property name="name" value="test"/>
+
+   <target name="clean" description="Clean output directories">
+      <delete>
+         <fileset dir="${clear.dir}">
+			<include name="**/*.*"/>
+         </fileset>
+      </delete>
+   </target>
+   
+</project>

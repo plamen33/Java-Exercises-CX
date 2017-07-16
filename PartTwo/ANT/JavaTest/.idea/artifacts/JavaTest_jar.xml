@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JavaTest:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaTest_jar</output-path>
+    <root id="archive" name="JavaTest.jar">
+      <element id="module-output" name="JavaTest" />
+      <element id="artifact" artifact-name="JavaFXApp" />
+    </root>
+  </artifact>
+</component>

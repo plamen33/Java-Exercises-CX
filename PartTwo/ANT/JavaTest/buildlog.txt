@@ -1,0 +1,16 @@
+
+clean:
+
+build:
+    [javac] Compiling 3 source files to D:\Documents\1 Programming\Codix\ANT\JavaTest\out\production\JavaTest
+
+copy:
+     [copy] Copying 4 files to D:\Documents\1 Programming\Codix\ANT\JavaTest\out\production\JavaTest\custom
+
+build-jar:
+      [jar] Building jar: D:\Documents\1 Programming\Codix\ANT\JavaTest\out\artifacts\JavaTest_jar\JavaOOPTest.jar
+
+all:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds

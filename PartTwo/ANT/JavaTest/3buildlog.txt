@@ -1,0 +1,6 @@
+
+copy:
+     [copy] Copying 4 files to D:\Documents\1 Programming\Codix\ANT\JavaTest\out\production\JavaTest\custom
+
+BUILD SUCCESSFUL
+Total time: 0 seconds

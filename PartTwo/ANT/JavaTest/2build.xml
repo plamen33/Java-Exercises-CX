@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<project name="test" basedir="." default="build">
+   <property name="src.dir" value="D:\Documents\1 Programming\Codix\ANT\JavaTest\src"/>
+   <property name="class.dir" value="D:\Documents\1 Programming\Codix\ANT\JavaTest\out\production\JavaTest"/>
+   <property name="name" value="test"/>
+
+   <path id="master-classpath">
+      <fileset dir="D:\Documents\1 Programming\Codix\ANT\JavaTest\src">
+         <include name="*.png"/>
+      </fileset> 
+   </path>
+ 
+   <target name="build" description="Compile main source tree java files">
+      <javac includeantruntime="false" srcdir="${src.dir}" destdir="${class.dir}" source="1.8" target="1.8" debug="false"
+        deprecation="false" optimize="false" failonerror="true">
+	    <classpath refid="master-classpath"/>
+      </javac>
+   </target>
+
+</project>

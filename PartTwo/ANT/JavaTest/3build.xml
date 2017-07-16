@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<project name="test" basedir="." default="copy">
+   <property name="src.dir" value="D:\Documents\1 Programming\Codix\ANT\JavaTest\out\production\JavaTest"/>
+   <property name="custom.dir" value="D:\Documents\1 Programming\Codix\ANT\JavaTest\out\production\JavaTest\custom"/>
+   <property name="name" value="test"/>
+
+
+   <target name="copy" description="Copy files">
+     <copy todir="${custom.dir}" overwrite="yes">
+	    <fileset dir="${src.dir}">
+          <include name="**/*.png"/>
+		  <include name="**/*.class"/>
+        </fileset>
+     </copy>
+   </target>
+   
+</project>
