@@ -29,6 +29,9 @@ class ClientOne {
                  responseFromServer = input.readLine();
                  System.out.println(ANSI_BLUE + responseFromServer + ANSI_RESET);
              }
+             if(inputCommand.equals("end.")){
+                 scanner.close();
+             }
          }
          while(!inputCommand.equals("end."));
      }

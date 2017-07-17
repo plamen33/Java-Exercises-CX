@@ -30,8 +30,12 @@ public class ClientTwo {
                     responseFromServer = input.readLine();
                     System.out.println(ANSI_PURPLE + responseFromServer);
                     if(responseFromServer==null){
+                        scanner.close();
                         break;
                     }
+                }
+                if(inputData.equals("end.")){
+                    scanner.close();
                 }
             }
             while(!inputData.equals("end."));
